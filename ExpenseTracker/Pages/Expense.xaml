@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseTracker.Pages.Expense"
+             Title="Expense">
+
+    <StackLayout Padding="10">
+        <Label Text="Expense Tracker" FontSize="24" HorizontalOptions="Center" />
+
+        <Entry x:Name="AmountEntry" Placeholder="Enter amount" Keyboard="Numeric"/>
+        <DatePicker x:Name="DatePicker" />
+        <Entry x:Name="DescriptionEntry" Placeholder="Enter description"/>
+        <Picker x:Name="CategoryPicker" Title="Select category" />
+        <Switch x:Name="ReimbursedSwitch" />
+        <Label Text="Reimbursed" />
+
+        <Button Text="Save Expense" Clicked="OnSaveExpenseClicked" />
+    </StackLayout>
+</ContentPage>

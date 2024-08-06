@@ -1,0 +1,16 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseTracker.Pages.Category"
+             Title="Category">
+
+    <StackLayout Padding="10">
+        <Label Text="Category Manager" FontSize="24" HorizontalOptions="Center" />
+
+        <Entry x:Name="NameEntry" Placeholder="Enter category name"/>
+        <Editor x:Name="DescriptionEditor" Placeholder="Enter category description"/>
+        <Entry x:Name="BudgetEntry" Placeholder="Enter budget limit" Keyboard="Numeric"/>
+        <Button Text="Add Category" Clicked="OnAddCategoryClicked" />
+    </StackLayout>
+</ContentPage>
